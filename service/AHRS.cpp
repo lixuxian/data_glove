@@ -224,9 +224,9 @@ void AHRS::MahonyUpdate(float *a, float *g, float *m, nsecs_t now) {
     float gx = g[0];
     float gy = g[1];
     float gz = g[2];
-    float mx = m[0];
-    float my = m[1];
-    float mz = m[2];
+    float mx = m[1];
+    float my = m[0];
+    float mz = -m[2];
 
     float q0 = q[0], q1 = q[1], q2 = q[2], q3 = q[3];   // short name local variable for readability
 
